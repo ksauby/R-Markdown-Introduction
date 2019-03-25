@@ -1,0 +1,117 @@
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: beamer_presentation
+---
+
+```{r echo=F}
+knitr::opts_chunk$set(echo=F, warning=F, message=F)
+options(xtable.comment = FALSE)
+```
+
+```{r eval=F}
+rmarkdown::render('presentation.Rmd')
+```
+
+## Overview
+
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/overview.png}
+	
+\end{figure}
+
+
+## Breakfast
+
+
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/workflow.png}
+
+\end{figure}
+
+
+# Citations + Google Scholar
+
+## Set up Google Scholar, part 1
+
+Set up Google Scholar so that it shows your BibTex formatting for each citation
+This assumes that you have a Google account
+
+## Set up Google Scholar, part 2
+
+## Example - Addition Citations to your .bib
+
+- Now we can look up articles on Google Scholar and *copy and paste* the BibTex citation to my "bibliography.bib" file
+- Rarely do I have to write the BibTex citation from scratch
+
+## Why Use R Markdown for your Citations/Bibliography?
+
+- formats citations according to format of your choosing
+- compiles bibliography for you
+- when you re-compile your R Markdown document, the bibliography will be recreated as well
+-- ensures that bibliography is up-to-date
+-- no extras, no missing references
+
+# Other Benefits of Using R Markdown
+
+## Tables
+
+## Tables and Figures
+
+- R Markdown numbers the tables and figures for you so you do not have to!
+
+## R Markdown Vs. Microsoft Word
+
+Pros of R Markdown
+
+- incorporate code directly into your document 
+- you can hide text that you are ready to delete!
+
+Cons of R Markdown
+
+- track changes - not as easy to implement changes when you have to do it in R Markdown
+## Bookdown Dissertation!
+
+https://github.com/ksauby/thesisdownufl
+
+
+
+## Resources
+
+https://rmarkdown.rstudio.com/index.html
+
+https://bookdown.org/yihui/rmarkdown/
+
+## Output to Word
+
+## Output to PDF
+
+## Output to Multiple Formats
+
+
+##
+
+
+##
+
+
+##
+
+
+##
+
+
+##
+
+
+
+##
+
+where to find csls

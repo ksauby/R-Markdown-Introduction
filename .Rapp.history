@@ -1,0 +1,2 @@
+setwd('/Users/KSauby/Documents/Projects/R-Markdown-Introduction')
+rmarkdown::render('presentation.Rmd')

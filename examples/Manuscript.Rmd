@@ -1,0 +1,62 @@
+---  
+title: A Sampling Strategy Designed to Maximize the Efficiency of Data Collection of Secondary Information About Items of Interest
+author: Kristen E. Sauby and Mary C. Christman
+output: 
+ word_document:
+  reference_docx: "Manuscript_style.docx"
+ pdf_document:
+  includes:
+   in_header: header.tex
+   number_sections: true
+bibliography: experiment.bib
+csl: methods-in-ecology-and-evolution.csl
+---
+
+
+```{r eval=F, echo=F}
+rmarkdown::render('Manuscript.Rmd', output_format = 'all')
+```
+
+\doublespacing
+
+## Abstract
+
+```{r child = '00_Abstract.Rmd'}
+```
+
+## Introduction
+
+```{r child = '01_Introduction.Rmd'}
+```
+
+## Materials and Methods
+
+```{r child = '02_Methods.Rmd'}
+```
+
+## Results
+
+```{r child = '03_Results.Rmd'}
+```
+
+## Discussion
+
+```{r child = '04_Discussion.Rmd'}
+```
+
+```{r child = '05_Conclusions.Rmd'}
+```
+
+## Acknowledgements
+
+```{r child = '06_Acknowledgements.Rmd'}
+```
+
+## Authors' Contributions
+
+KES and MCC came up with the sampling plan and wrote the manuscript. KES collected the data, wrote the R code, and ran the analyses.
+
+
+
+```{r child = 'Figures.Rmd'}
+```
