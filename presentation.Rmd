@@ -1,21 +1,24 @@
 ---
-title: "Habits"
-author: John Doe
-date: March 22, 2005
-output: beamer_presentation
+title: "Introduction to R Markdown"
+author: 
+- Kristen Sauby,
+- ksauby@gmail.com
+date: 26 March 2019
+output: 
+ beamer_presentation:
+  theme: "Madrid"
+  colortheme: "seahorse"
+  fonttheme: "structurebold"
+classoption: "aspectratio=169"
 ---
 
-```{r echo=F}
-knitr::opts_chunk$set(echo=F, warning=F, message=F)
-options(xtable.comment = FALSE)
-```
+Find this presentation (made with R Markdown) and more here:
 
-```{r eval=F}
-rmarkdown::render('presentation.Rmd')
-```
+https://github.com/ksauby/R-Markdown-Introduction
 
-## Overview
-
+<!-- ----------------------------------------------------------------------- -->
+# Overview
+<!-- ----------------------------------------------------------------------- -->
 
 \begin{figure}[!h]
   \centering
@@ -24,10 +27,7 @@ rmarkdown::render('presentation.Rmd')
 	
 \end{figure}
 
-
-## Breakfast
-
-
+---
 
 \begin{figure}[!h]
   \centering
@@ -36,38 +36,206 @@ rmarkdown::render('presentation.Rmd')
 
 \end{figure}
 
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
 
-# Citations + Google Scholar
+# Output to PDF
 
-## Set up Google Scholar, part 1
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/pdf_doc.png}
 
-Set up Google Scholar so that it shows your BibTex formatting for each citation
-This assumes that you have a Google account
+\end{figure}
 
-## Set up Google Scholar, part 2
 
-## Example - Addition Citations to your .bib
+# Output to Word
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/output_to_word.png}
+
+\end{figure}
+
+
+# Output to Word
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/word_template.png}
+
+\end{figure}
+
+# Output to multiple formats
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/output_to_multiple_formats.png}
+
+\end{figure}
+
+<!-- ----------------------------------------------------------------------- -->
+# References
+<!-- ----------------------------------------------------------------------- -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.85\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/citations.png}
+
+\end{figure}
+
+
+# Set up Google Scholar, part 1
+
+- Set up Google Scholar so that it shows your BibTex formatting for each citation
+- This assumes that you have a Google account
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/google_scholar_steps_1_2.png}
+
+\end{figure}
+
+# Set up Google Scholar, part 2
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/google_scholar_step_3.png}
+
+\end{figure}
+
+# Example - Addition Citations to your .bib
 
 - Now we can look up articles on Google Scholar and *copy and paste* the BibTex citation to my "bibliography.bib" file
 - Rarely do I have to write the BibTex citation from scratch
 
-## Why Use R Markdown for your Citations/Bibliography?
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/p_hacking_example.png}
+
+\end{figure}
+
+
+# Why Use R Markdown for your Citations/Bibliography?
 
 - formats citations according to format of your choosing
 - compiles bibliography for you
 - when you re-compile your R Markdown document, the bibliography will be recreated as well
--- ensures that bibliography is up-to-date
--- no extras, no missing references
+     - ensures that bibliography is up-to-date
+     - no extras, no missing references
 
-# Other Benefits of Using R Markdown
 
-## Tables
+# Citation Styles
 
-## Tables and Figures
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/citation_styles.png}
+
+\end{figure}
+
+
+
+<!-- ----------------------------------------------------------------------- -->
+# Tables and Figures
+<!-- ----------------------------------------------------------------------- -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/tables.png}
+
+\end{figure}
+
+# Use Fancy LaTeX Code to Include Figure
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/latex_figure.png}
+
+\end{figure}
+
+# Numbering
 
 - R Markdown numbers the tables and figures for you so you do not have to!
 
-## R Markdown Vs. Microsoft Word
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/label_figure.png}
+
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/numbered_figure.png}
+
+\end{figure}
+
+
+<!-- ----------------------------------------------------------------------- -->
+# Math
+<!-- ----------------------------------------------------------------------- -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/math.png}
+
+\end{figure}
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/math_in_pdf.png}
+
+\end{figure}
+
+# A Tool to Build Math Formulas
+
+I just Google "online latex equation editor" to find website
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/equation_editor.png}
+
+\end{figure}
+
+# Bookdown Dissertation!
+
+https://github.com/ksauby/thesisdownufl
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/thesisdown.png}
+
+\end{figure}
+
+
+# Bookdown Dissertation!
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/thesisdown2.png}
+
+\end{figure}
+
+<!-- ----------------------------------------------------------------------- -->
+# R Markdown Vs. Microsoft Word
+<!-- ----------------------------------------------------------------------- -->
 
 Pros of R Markdown
 
@@ -77,41 +245,20 @@ Pros of R Markdown
 Cons of R Markdown
 
 - track changes - not as easy to implement changes when you have to do it in R Markdown
-## Bookdown Dissertation!
 
-https://github.com/ksauby/thesisdownufl
-
-
-
-## Resources
+<!-- ----------------------------------------------------------------------- -->
+# Resources
+<!-- ----------------------------------------------------------------------- -->
 
 https://rmarkdown.rstudio.com/index.html
 
 https://bookdown.org/yihui/rmarkdown/
 
-## Output to Word
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/rmarkdown_website.png}
 
-## Output to PDF
-
-## Output to Multiple Formats
-
-
-##
+\end{figure}
 
 
-##
-
-
-##
-
-
-##
-
-
-##
-
-
-
-##
-
-where to find csls

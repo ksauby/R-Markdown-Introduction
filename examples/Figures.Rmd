@@ -1,0 +1,230 @@
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% cluster sampling example %%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/RACS_figure.png}
+	
+	\caption[Diagram of cluster sampling.]{Diagram of cluster sampling, including A) secondary sampling around primary unit $i$ for up to steps $f=4$, and B) the configurations of all clusters for which $m$ is known where $f_{\text{max}} = 2$.}
+		
+	\label{fig:ACS_diagram_cap} 
+	
+\end{figure}
+
+\clearpage
+
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% ACS RACS Example %%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.8\textwidth,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/ACS_RACS_example.pdf}
+	\caption[Examples of samples drawn according to different sampling schemes.]{Examples of samples drawn according to different sampling schemes, including A) adaptive cluster sampling (ACS), B) restricted ACS (RACS), and C) and D), simple random sampling without replacement (SRSWOR).
+For ACS and RACS (A and B), the presence of cacti (condition $C=1$) initiates adaptive cluster sampling, and in the primary sample $n_1 =$
+`r dim(ACS_RACS_example_ACS[ACS_RACS_example_ACS$Sampling=="Primary Sample",])[1]`
+only
+`r dim(ACS_RACS_example_ACS[ACS_RACS_example_ACS$Sampling=="Primary Sample" & ACS_RACS_example_ACS$Cactus=="1",])[1]`
+units contain the species of interest. In unrestricted ACS (A), an additional 
+`r dim(ACS_RACS_example_ACS[ACS_RACS_example_ACS$Sampling!="Primary Sample",])[1]`
+units are selected in the secondary sample and the sizes of the networks containing the species of interest are known (size of the largest network, $m = 
+`r max(ACS_RACS_example_ACS$m)`$).
+Three of the six networks of cacti are sampled.
+However, in the RACS example (B; $q=12$ and $f_{\text{max}}=2$), only an additional
+`r dim(ACS_RACS_example_RACS[ACS_RACS_example_RACS$Sampling!="Primary Sample",])[1]`
+units are selected in the secondary sample and $m$ is known only for one (the top right neighborhood/network) of the four networks.
+Two neighborhoods are sampled from the same network, both incorrectly estimating $m$ of that network.
+The SRSWOR examples (C, n = 196, and D, n = 45) display the same final sample sizes as the ACS (A) and RACS (B) designs, respectively.
+For both SRSWOR examples, a smaller fraction of the units sampled contain cacti compared to ACS and RACS, respectively.}
+		
+	\label{tab:ACS_example_cap} 
+	
+\end{figure}
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% Study System %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Volumes/Kristens second drive/Dropbox/gradschool/Research/Research_Edited_Figures/study_system/study_system.jpg}
+	
+	\caption{The two cactus species and two cactus moth species sampled in northeastern Florida. Photos courtesy of Kristen E. Sauby.}
+		
+	\label{fig:study_organisms_cap} 
+	
+\end{figure}
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% Study Site %%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \includegraphics[width=.95\textwidth,height=\textheight,keepaspectratio]{/Volumes/Kristens second drive/Dropbox/gradschool/Research/Research_Edited_Figures/site_pictures/GTMNERR_figure_new.jpg}
+	
+	\caption[Maps of the sampling locations in the Guana Tolomato Matanzas National Estuarine Research Reserve in northeastern Florida.]{Maps of the sampling locations from which the cactus survey data was collected in the Guana Tolomato Matanzas National Estuarine Research Reserve in northeastern Florida, including a A) coastal grassland patch, B) a beach dune habitat patch, and C) five islands along the Intracoastal Waterway. Imagery sources include Google Earth, TerraMetrics, Data SIO, NOAA, U.S. Navy, NGA, and GEBCO.}
+		
+	\label{fig:sampled_populations_cap} 
+	
+\end{figure}
+
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% photo of a RACS cluster %%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Volumes/Kristens second drive/Dropbox/gradschool/Research/Research_Edited_Figures/study_methods/example_cluster.jpg}
+	
+	\caption{An example of a cluster used in our data collection. Photo courtesy of Kristen E. Sauby.}
+		
+	\label{fig:example_cluster_cap} 
+	
+\end{figure}
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% CACTUS REALIZATIONS %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/cactus_populations.pdf}
+	
+	\caption[\emph{Opuntia drummondii} and \emph{O. stricta} locations for the six artificial populations that vary in cactus occupancy.]{\emph{Opuntia drummondii} and \emph{O. stricta} locations for the six artificial populations that vary in cactus occupancy ($\mu_C$).}
+		
+	\label{fig:cactus_realizations_cap} 
+	
+\end{figure}
+
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% CACTUS REALIZATIONS - drummondii %%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/cactus_populations_drummondii.pdf}
+	
+	\caption[\emph{Opuntia drummondii} locations, as well as insect occupancy status, for the six artificial populations that vary in \emph{Opuntia drummondii} occupancy.]{\emph{Opuntia drummondii} locations, as well as insect occupancy status, for the six artificial populations that vary in \emph{Opuntia drummondii} occupancy ($\mu_d$).}
+		
+	\label{fig:drummondii_realizations_cap} 
+	
+\end{figure}
+
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% CACTUS REALIZATIONS - STRICTA %%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/cactus_populations_stricta.pdf}
+	
+	\caption{\emph{Opuntia stricta} locations, as well as insect occupancy status, for the six artificial populations, which vary in \emph{Opuntia stricta} occupancy ($\mu_s$).}
+		
+	\label{fig:stricta_realizations_cap} 
+	
+\end{figure}
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% Population Summary %%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \noindent \includegraphics[width=0.65\textwidth,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/pop_characteristics.jpg}
+	
+	\caption[Summary and spatial statistics of cacti and insect occupancy for the six artificial cactus populations.]{For the six artificial cactus populations, A) summary statistics of population networks, and summary and spatial statistics of A) cacti and B) insect occupancy.}
+		
+	\label{fig:cactus_summary_cap} 
+	
+\end{figure}
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% OCCUPANCY BIAS RESULTS %%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/occupancy_bias_for_pres.pdf}
+	
+	\caption[Relative bias of the HT estimates of \emph{Opuntia drummondii}, \emph{Opuntia stricta}, and cactus occupancy.]{Relative bias of the HT estimates of \emph{Opuntia drummondii}, \emph{Opuntia stricta}, and cactus occupancy, based on $M = 5000$ simulations of ACS and of RACS at $f_{\text{max}}$. 
+For RACS, estimates are given using $\pi_{ij}$ (uncorrected) and $\pi_{ij,\text{RACS}}$ (corrected).}
+		
+	\label{fig:occupancy_bias_cap} 
+	
+\end{figure}
+
+\clearpage
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% OCCUPANCY BIAS RESULTS - VARIATION 
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/occupancy_bias_boxplot-1.pdf}
+  \caption{TO DO: re-generate figure with results from bias correction.}
+  \label{fig:figures_occupancy_bias-boxplot-1}
+\end{figure}
+
+\clearpage
+%%%%%%%%%%% -->
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% insect occupancy bias %%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/insect_occupancy_bias_for_pres.pdf}
+	
+	\caption[Relative bias of the HT ratio estimates of the occupancy of the invasive and native moths on \emph{Opuntia stricta}.]{Relative bias of the HT ratio estimates of the occupancy of the invasive and native moths on \emph{Opuntia stricta}, based on $M = 5000$ simulations of ACS and RACS, ranging from (A) low to (B) high occupancy.
+For RACS, estimates are given using $\pi_{ij}$ (uncorrected) and $\pi_{ij,\text{RACS}}$ (corrected).}
+		
+	\label{fig:occupancy_cactus_by_insect_bias_cap} 
+	
+\end{figure}
+
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% BIAS OF THE VARIANCE %%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+  \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/variance_bias.pdf}
+	
+	\caption[Estimation of the relative bias of the Horvitz-Thompson variance estimator for \emph{Opuntia drummondii}, \emph{Opuntia stricta}, and cactus occupancy]{Estimation of the relative bias of the Horvitz-Thompson variance estimator, $RB\left(\overline{\widehat{\text{var}} (\bar{y}_{HT})}\right)$, for \emph{Opuntia drummondii}, \emph{Opuntia stricta}, and cactus occupancy using ACS and RACS.
+For RACS, estimates are given using $\pi_{ij}$ (uncorrected) and $\pi_{ij,\text{RACS}}$ (corrected).}
+		
+	\label{fig:variance_bias_cap} 
+	
+\end{figure}
+
+\clearpage
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%% SECONDARY SAMPLE SIZE SUMMARY %%%%%%%%%%%%%%%% -->
+
+\begin{figure}[!h]
+  \centering
+	
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/ACSampling_project/code/Manuscript/figures/secondary_sample_sizes.pdf}
+	
+	\caption[Mean total sample sizes for ACS and RACS simulations.]{Mean total sample sizes for ACS and RACS simulations. Solid circles indicate ACS and open boxes indicate RACS.}
+		
+	\label{fig:secondary_sample_sizes_cap} 
+	
+\end{figure}
+
+\clearpage
