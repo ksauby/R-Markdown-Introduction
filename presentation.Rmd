@@ -1,8 +1,6 @@
 ---
 title: "Introduction to R Markdown"
-author: 
-- Kristen Sauby,
-- ksauby@gmail.com
+author: Kristen Sauby, ksauby@gmail.com
 date: 26 March 2019
 output: 
  beamer_presentation:
@@ -171,14 +169,14 @@ https://github.com/ksauby/R-Markdown-Introduction
 \begin{figure}[!h]
   \centering
 	
-  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/label_figure.png}
+  \noindent \includegraphics[width=0.7\textwidth,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/label_figure.png}
 
 \end{figure}
 
 \begin{figure}[!h]
   \centering
 	
-  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/numbered_figure.png}
+  \noindent \includegraphics[width=0.7\textwidth,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/numbered_figure.png}
 
 \end{figure}
 
@@ -190,14 +188,14 @@ https://github.com/ksauby/R-Markdown-Introduction
 \begin{figure}[!h]
   \centering
 	
-  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/math.png}
+  \noindent \includegraphics[width=0.8\textwidth,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/math.png}
 
 \end{figure}
 
 \begin{figure}[!h]
   \centering
 	
-  \noindent \includegraphics[height=0.9\textheight,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/math_in_pdf.png}
+  \noindent \includegraphics[width=0.8\textwidth,keepaspectratio]{/Users/KSauby/Documents/Projects/R-Markdown-Introduction/images/math_in_pdf.png}
 
 \end{figure}
 
